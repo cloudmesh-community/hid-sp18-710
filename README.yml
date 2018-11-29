@@ -11,7 +11,7 @@ owner:
 notebook:
     url: https://github.com/cloudmesh-community/hid-sp18-710/blob/master/notebook.md
 experiment:
-    url: https://github.com/cloudmesh-community/hid-sp18-710/blob/master/experiment
+    url: https://github.com/cloudmesh-community/hid-sp18-710/tree/master/experiment
 paper1:
     abstract: >
         The data volume is increasing at high velocity and it comes
