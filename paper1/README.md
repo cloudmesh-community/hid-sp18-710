@@ -7,7 +7,7 @@ New HID : 710
 
 Title : NoSQL Databases in support of Big Data and Analytics
 
-Url : https://github.com/cloudmesh-community/hid-sp18-710/new/master/paper1
+Url : https://github.com/cloudmesh-community/hid-sp18-710/tree/master/paper1
 
 Status: 100%
   
