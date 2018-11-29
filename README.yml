@@ -10,9 +10,10 @@ owner:
   url: https://github.com/cloudmesh-community/hid-sp18-710
 notebook:
     url: https://github.com/cloudmesh-community/hid-sp18-710/blob/master/notebook.md
+experiment:
+    url: https://github.com/cloudmesh-community/hid-sp18-710/blob/master/experiment
 paper1:
     abstract: >
-        abstract: >
         The data volume is increasing at high velocity and it comes
         from various sources with different formats.These data no
         longer fits into defined structure and hence the need for
