@@ -1,6 +1,83 @@
 owner:
+  oldhid: hid323
   firstname: "Uma"
   lastname: "Kugan"
   hid: "hid-sp18-710"
   community: "I523"
   semester: "Fall 2017"
+  course: Big Data Applications and Analytics (I523)
+  online: Yes
+  url: https://github.com/cloudmesh-community/hid-sp18-710
+notebook:
+    url: https://github.com/cloudmesh-community/hid-sp18-710/blob/master/notebook.md
+paper1:
+    abstract: >
+        abstract: >
+        The data volume is increasing at high velocity and it comes
+        from various sources with different formats.These data no
+        longer fits into defined structure and hence the need for
+        handling the big data using NoSQL.This paper will highlight on
+        what is NoSQL and where and when it should be used for and
+        also why Big Data can not be handled in traditional RDBMS.
+    author:
+        - Uma M Kugan
+    chapter: Technology
+    hid:
+        - hid-sp18-710
+    status: "100% Review Date 11.10.2017"
+    title: NoSQL Databases in support of Big Data Application 
+    and Analytics
+    url: https://github.com/cloudmesh-community/hid-sp18-710/tree/master/paper1
+paper2:
+    duplicate: True
+    status: 100% Review Date 11.06.2017
+    abstract: >
+        In recent history, the explosion of smart devices, social
+        media platforms and the Internet of Things has resulted in
+        major replication of data.  This data is transferred at high
+        speeds, in large volumes and in a variety of different
+        platforms. Data is one of the biggest assets of companies and
+        with the exponential growth of data comes an increasing
+        problem: Security and Privacy. Security and privacy have
+        become a major initiative for every organization that has or
+        utilizes databases.  These organizations need to protect their
+        brands, avoid penalties, and, in worst case scenarios, avoid
+        circumstances in which they may either lose a significant
+        amount of business or their business as a whole. The computer
+        science industry, alongside of these organizations, need to
+        continue to develop ways to protect, utilize, and gain
+        real-time insight from the data that each organization
+        has. This paper is going to highlight security and privacy in
+        Big Data, alongside of specific issues and challenges related
+        to security.
+    author:
+        - Uma M Kugan
+    chapter: Security
+    hid:
+        - 710
+    title: Big Data Security and Privacy
+    url: https://github.com/cloudmesh-community/hid-sp18-709/tree/master/paper-andres-uma
+    
+project:
+    review: Jan 4 2017
+    author:
+        - Uma M Kugan
+    hid:
+        - 710
+    title:  Plugin to cmd5 That Creates a Docker Swarm Cluster on 3 Raspberry Pis
+    abstract: >
+        Information technologies are evolving from mainly one-host environments to 
+        more distributed environment. Docker Swarm makes it possible to avoid having a 
+        single point of failure and instead, have multiple nodes that can be properly 
+        balanced and contain replicas of the information. Currently, Dockers must be 
+        individually downloaded, installed and configured on each physical computer in 
+        order for the desired computers to work in swarm mode. This paper details the 
+        development of a plug-in that would allow CloudMesh to deploy a Docker Swarm cluster.  
+        The creation of this plug-in would be the first step towards the development of
+        a tool which would allow larger debian based networks to work as container oriented 
+        virtual environments with optimized usage of resources.
+    type: project
+    status: Nov 29 18 100%
+    chapter: TBD
+    url: https://github.com/cloudmesh-community/hid-sp18-709/tree/master/project-paper
+    https://github.com/cloudmesh-community/hid-sp18-709/tree/master/project-code
