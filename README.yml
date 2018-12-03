@@ -58,6 +58,7 @@ paper2:
         - 710
     title: Big Data Security and Privacy
     url: https://github.com/cloudmesh-community/hid-sp18-709/tree/master/paper-andres-uma
+    group: hid-sp18-710, hid-sp18-709
     
 project:
     review: Jan 4 2017
@@ -65,7 +66,7 @@ project:
         - Uma M Kugan
     hid:
         - 710
-    title:  Plugin to cmd5 That Creates a Docker Swarm Cluster on 3 Raspberry Pis
+    title:  Cmd5 plugin to Creates a Docker Swarm Cluster on 3 Raspberry Pis
     abstract: >
         Information technologies are evolving from mainly one-host environments to 
         more distributed environment. Docker Swarm makes it possible to avoid having a 
@@ -82,3 +83,4 @@ project:
     chapter: TBD
     url: https://github.com/cloudmesh-community/hid-sp18-709/tree/master/project-paper
     https://github.com/cloudmesh-community/hid-sp18-709/tree/master/project-code
+    group: hid-sp18-710, hid-sp18-709
