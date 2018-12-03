@@ -18,7 +18,7 @@ experiment:
 paper1:
   - title: NoSQL Databases in support of Big Data Application 
     and Analytics
-    keywords: 
+    keywords: NoSQL, Bigdata, RDBMS
     chapter: Technology
     group: hid-sp18-710
     url: https://github.com/cloudmesh-community/hid-sp18-710/tree/master/paper1    
