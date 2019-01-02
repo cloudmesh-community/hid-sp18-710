@@ -80,30 +80,23 @@ systems. NoSQL systems are primarily differentiated by data model and
 also on how the data is stored. They are Key-Value stores, Wide column
 stores, Graph databases and Document stores [@edmodel].
 
-### Key-Value Stores : 
-    Key is the unique identifier or label of an item whose data or
+Key-Value Stores - Key is the unique identifier or label of an item whose data or
     its location is stored in the value. It is very basic non relational
     data types which is most commonly used. Example include Redis,
     Amazon DynamoDB and Oracle NoSQL.
 
-Wide Column Stores
-
-:   \- Every record in the stores may differ in the number of columns.
+Wide Column Stores - Every record in the stores may differ in the number of columns.
     This is very important factor for analytic because it needs very low
     I/O and also reduces the volume of data that are read to the disk.
     It is also known as tabular NoSQL database.Examples include HBase,
     Google BigTable and Cassandra.
 
-Graph Database
-
-:   \- As the name indicates, it uses graph structures nodes and edges
+Graph Database - As the name indicates, it uses graph structures nodes and edges
     to represent the data. This is very useful in depicting social
     relationship, network topology. Examples include Neo4J and DataStax
     Enterprise Graph.
 
-Document Stores
-
-:   \- It stores the data as document typically in JASON or XML format.
+Document Stores - It stores the data as document typically in JASON or XML format.
     It is very flexibile and one can easily access the data. This is
     used widely in many places. Examples include MongoDB and CouchDB.
 
@@ -168,15 +161,11 @@ and hence the schema has to be designed in such a way so that it can
 support joins [@vish]. Below are the key things that needs to be
 considered to handle relational data in a NoSQL.
 
-Avoid Sub Queries
-
-:   : Instead of using complex sub queries or nested joins to retrieve
+Avoid Sub Queries - Instead of using complex sub queries or nested joins to retrieve
     the data, break into multiple queries. NoSQL performances are very
     high when compared to traditional RDBMS Queries.
 
-Denormalize the Data
-
-:   : For faster retrieval of data, it is essential to compromise on
+Denormalize the Data - For faster retrieval of data, it is essential to compromise on
     denormalizing the data rather than storing only foreign keys.
 
 ## RDBMS to NoSQL Migration
