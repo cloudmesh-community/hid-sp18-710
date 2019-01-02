@@ -1,4 +1,4 @@
-# NoSQL Databases in Support of Big Data and Analytics
+# NoSQL Databases in Support of Big Data and Analytics :wave:
 
   
 
@@ -11,7 +11,7 @@
 
 ---  
 
-Keywords:i523, hid323, NoSQL, Bigdata, RDBMS, hid-sp18-710.  
+Keywords: i523, hid323, NoSQL, Bigdata, RDBMS, hid-sp18-710.  
 ---
 
 
@@ -80,9 +80,8 @@ systems. NoSQL systems are primarily differentiated by data model and
 also on how the data is stored. They are Key-Value stores, Wide column
 stores, Graph databases and Document stores [@edmodel].
 
-Key-Value Stores
-
-:   \- Key is the unique identifier or label of an item whose data or
+### Key-Value Stores : 
+    Key is the unique identifier or label of an item whose data or
     its location is stored in the value. It is very basic non relational
     data types which is most commonly used. Example include Redis,
     Amazon DynamoDB and Oracle NoSQL.
@@ -187,7 +186,7 @@ ahead and take an iterative approach. Based on the need of application,
 one have to choose which NoSQL database we are going to migrate to
 [@aws].
 
-## Planning
+### Planning
 
 The goal of any migration should be better performance at the reduced
 cost with the newest technology. While migrating from RDBMS, we have to
@@ -195,7 +194,7 @@ consider volume and source of data that is going to be migrated to
 NoSQL. All the details should be documented well so that we do not have
 to face unplanned surprises at the end [@mongrdbms].
 
-## Data Analysis
+### Data Analysis
 
 This is very critical and will help in understanding the nature of the
 data and how that data is accessed within the application. Based on the
@@ -203,14 +202,14 @@ analysis of data usage, we will be able to define how data will be
 read/written which will help us in building a better data model
 [@mongrdbms].
 
-## Data Modeling
+### Data Modeling
 
 When migrating from any RDBMS, depending on the need of application, we
 may have to sometimes denormalize the data. In this phase, based on the
 data analysis and the tech-stream, we have to define keys and values
 [@aws].
 
-## Testing
+### Testing
 
 Testing is always very critical and crucial for any migration projects.
 We have to define all possible test cases and different types of
@@ -218,7 +217,7 @@ testing: unit, functional, load, integration, user acceptance and smoke
 testing have to be performed and outputs have to be clearly documented
 [@aws].
 
-## Data Migration
+### Data Migration
 
 Once all the above steps are successfully tested and implemented, next
 final act is to migrate all data from RDBMS to NoSQL. Post
