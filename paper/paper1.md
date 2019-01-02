@@ -1,30 +1,21 @@
----
-abstract: |
-    The data volume is increasing at high velocity and it comes from various
-    sources with different formats. These data no longer fits into defined
-    structure and hence the need for handling the big data using NoSQL. This
-    paper will highlight on what is NoSQL and where and when it should be
-    used for and also why Big Data can not be handled in traditional RDBMS.
-author:
-- Uma M Kugan
-bibliography:
-- 'report.bib'
-title: NoSQL Databases in Support of Big Data and Analytics
+# NoSQL Databases in Support of Big Data and Analytics
+
+  
+
+| Uma M Kugan 
+| umakugan@iu.edu
+| Indiana University Bloomington 
+| hid: hid-sp18-710 
+| github: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-710/edit/master/paper/paper.md) 
+
+
+---  
+
+Keywords:i523, hid323, NoSQL, Bigdata, RDBMS, hid-sp18-710.  
 ---
 
-\orcid{1234-5678-9012}
-\affiliation{%
-  \institution{Indiana University}
-  \streetaddress{711 N Park Avue}
-  \city{Bloomington} 
-  \state{IN} 
-  \postcode{47408}
-  \country{USA}}
-\email{umakugan@iu.edu}
-\keywords{i523, hid323, NoSQL, Bigdata, RDBMS}
-\maketitle
-Introduction
-============
+
+## Introduction
 
 RDBMS have always been the preferred method of storage for many years
 and its powerful Query language made it very user friendly. Data has
@@ -39,8 +30,7 @@ limiting factors in these databases for Big Data especially Structured
 schema which was one of the main reason for RDBMS to scale it for larger
 databases [@aspire].
 
-Limitation of RDBMS
-===================
+## Limitation of RDBMS
 
 Choice of database chosen depends on their data model, data access and
 data latency. But in this era, every organization needs all three at the
@@ -67,8 +57,7 @@ Time Consuming - Analyzing data in real time is highly impossible with
 RDBMS and no one have time to wait for longer load schedules in
 traditional way of data warehouse and ETL.
 
-NoSQL
-=====
+## NoSQL
 
 \"The term NoSQL was first used by Carlo Strozzi to name a database
 management system (DBMS) he developed. This system explicitly avoided
@@ -84,8 +73,7 @@ cost. NoSQL databases, because of it's simpler data model, it does not
 need DBA's to maintain the health of the database. NoSQL databases are
 widely used in big data and in real-time applications.
 
-NoSQL Types
-===========
+## NoSQL Types
 
 In Edlich et al. identify four classes of NoSQL systems as 'Core-NoSQL'
 systems. NoSQL systems are primarily differentiated by data model and
@@ -120,8 +108,7 @@ Document Stores
     It is very flexibile and one can easily access the data. This is
     used widely in many places. Examples include MongoDB and CouchDB.
 
-Advantages of NoSQL
-===================
+## Advantages of NoSQL
 
 NoSQL databases differ from traditional databases in features and
 functionality. There is no common query language, high I/O performance,
@@ -143,8 +130,7 @@ machines whereas in NoSQL, both read and writes are enabled in all
 nodes. In general most of the NoSQL databases performance is better than
 SQL databases.
 
-NoSQL Challenges
-================
+## NoSQL Challenges
 
 NoSQL databases have created lot of interests in each organization to
 move away slowly from traditional databases but there are many
@@ -161,8 +147,7 @@ best tool and with extreme caution [@dbkumar]. Ad-hoc query analysis is
 quite complex in NoSQL databases and it requires expertise to write even
 a simple query.
 
-NoSQL For Big Data
-==================
+## NoSQL For Big Data
 
 When to choose NoSQL over an RDBMS depends on ACID (Atomicity,
 Consistency, Isolation, Durability) vs BASE (Basically Available, Soft
@@ -177,8 +162,7 @@ comes handy where data structure is not restricted by schema(schema less
 design). Many NoSQL database compromises consistency over availability
 and data partition [@volt].
 
-How to handle Relational Data in NoSQL
-======================================
+## How to handle Relational Data in NoSQL
 
 NoSQL database in general can not perform joins between data structures
 and hence the schema has to be designed in such a way so that it can
@@ -196,16 +180,14 @@ Denormalize the Data
 :   : For faster retrieval of data, it is essential to compromise on
     denormalizing the data rather than storing only foreign keys.
 
-RDBMS to NoSQL Migration
-========================
+## RDBMS to NoSQL Migration
 
 Database Migrations are always cumbersome and it is better to plan well
 ahead and take an iterative approach. Based on the need of application,
 one have to choose which NoSQL database we are going to migrate to
 [@aws].
 
-Planning
---------
+## Planning
 
 The goal of any migration should be better performance at the reduced
 cost with the newest technology. While migrating from RDBMS, we have to
@@ -213,8 +195,7 @@ consider volume and source of data that is going to be migrated to
 NoSQL. All the details should be documented well so that we do not have
 to face unplanned surprises at the end [@mongrdbms].
 
-Data Analysis
--------------
+## Data Analysis
 
 This is very critical and will help in understanding the nature of the
 data and how that data is accessed within the application. Based on the
@@ -222,16 +203,14 @@ analysis of data usage, we will be able to define how data will be
 read/written which will help us in building a better data model
 [@mongrdbms].
 
-Data Modeling
--------------
+## Data Modeling
 
 When migrating from any RDBMS, depending on the need of application, we
 may have to sometimes denormalize the data. In this phase, based on the
 data analysis and the tech-stream, we have to define keys and values
 [@aws].
 
-Testing
--------
+## Testing
 
 Testing is always very critical and crucial for any migration projects.
 We have to define all possible test cases and different types of
@@ -239,8 +218,7 @@ testing: unit, functional, load, integration, user acceptance and smoke
 testing have to be performed and outputs have to be clearly documented
 [@aws].
 
-Data Migration
---------------
+## Data Migration
 
 Once all the above steps are successfully tested and implemented, next
 final act is to migrate all data from RDBMS to NoSQL. Post
@@ -252,8 +230,7 @@ to identify and fix the issue. Once issue has been fixed, data migration
 has to be scheduled and this step goes in cyclic unless migration was
 completely successful.
 
-Conclusion
-==========
+## Conclusion
 
 With the explosion of the data in the recent years, have paved the big
 way for the growth of Big Data and everyone wants to move their
@@ -268,5 +245,3 @@ colleague Michael Macal for their support and suggestions to write this
 paper and also to my fellow classmate Andres Castro Benavides for his
 support. My special thanks to Dr. Gregor von Laszewski for his support
 in fine tuning the paper.
-
-\bibliographystyle{ACM-Reference-Format}
