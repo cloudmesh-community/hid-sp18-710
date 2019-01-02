@@ -33,8 +33,8 @@ paper2:
     status: 100% Review Date 11.06.2017
     
 project:
-  - title: CMD5 Plugin to Create a Docker Swarm Cluster on 3 Raspberry PIs
-    keyword: cmd5, docker, swarm
+  - title: Data Exploration of Gun violence in America
+    keyword: gun violence
     url: https://github.com/cloudmesh-community/hid-sp18-709/blob/master/project-report/report.md
     group: hid-sp18-709 hid-sp18-710 
     code: https://github.com/cloudmesh-community/hid-sp18-709/tree/master/project-code
