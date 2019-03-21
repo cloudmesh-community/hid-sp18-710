@@ -15,8 +15,6 @@ Keywords: i523, hid323, NoSQL, Bigdata, RDBMS, hid-sp18-710.
 ---
 
 
-## Introduction
-
 RDBMS have always been the preferred method of storage for many years
 and its powerful Query language made it very user friendly. Data has
 grown exponentially in a past decade due to the growth of social media,
@@ -227,6 +225,10 @@ relatively very cheap when compared to migrating the existing data in
 RDBMS to NoSQL. We have to carefully weigh in, understand the data and
 how the data will be used in the use case to enjoy the full benefit of
 migrating into No SQL.
+
+## Acknowledgement
+
+:o: this should go in the README.yml
 
 My sincere thanks to my mentor and leader Vishal Baijal and to my
 colleague Michael Macal for their support and suggestions to write this
