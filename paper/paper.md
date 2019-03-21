@@ -57,13 +57,19 @@ traditional way of data warehouse and ETL.
 
 ## NoSQL
 
-\"The term NoSQL was first used by Carlo Strozzi to name a database
-management system (DBMS) he developed. This system explicitly avoided
-SQL as querying language, while it was still based on a relational
-model\" [@seasupenn]. The term NoSQL means that the database does not
-follow the relational model espoused by E.F Codd in his 1970 paper, \"A
-Relational Model of Data for Large Shared Data Banks which would become
-the basis for all modern RDBMS\" [@rdbms]. NoSQL does not mean NO to
+> "The term NoSQL was first used by Carlo Strozzi to name a database
+> management system (DBMS) he developed. This system explicitly avoided
+> SQL as querying language, while it was still based on a relational
+> model" [@seasupenn]. 
+
+The term NoSQL means that the database does not
+follow the relational model espoused by E.F Codd in his 1970 paper, 
+
+> "A
+> Relational Model of Data for Large Shared Data Banks which would become
+> the basis for all modern RDBMS\" [@rdbms]. 
+
+NoSQL does not mean NO to
 SQL. It means Not Only SQL. NoSQL means storage is just nonvolatile
 object store with no maintenance concerns. Most NoSQL Databases are open
 source which allows everyone to evaluate the tool of their choice at low
@@ -73,10 +79,14 @@ widely used in big data and in real-time applications.
 
 ## NoSQL Types
 
-In Edlich et al. identify four classes of NoSQL systems as 'Core-NoSQL'
+In Edlich et al. :o:MISSINGREF
+
+identify four classes of NoSQL systems as *Core-NoSQL*
 systems. NoSQL systems are primarily differentiated by data model and
 also on how the data is stored. They are Key-Value stores, Wide column
 stores, Graph databases and Document stores [@edmodel].
+
+:o: markdown error
 
 Key-Value Stores - Key is the unique identifier or label of an item whose data or
     its location is stored in the value. It is very basic non relational
@@ -159,6 +169,8 @@ and hence the schema has to be designed in such a way so that it can
 support joins [@vish]. Below are the key things that needs to be
 considered to handle relational data in a NoSQL.
 
+:o: markdown error
+
 Avoid Sub Queries - Instead of using complex sub queries or nested joins to retrieve
     the data, break into multiple queries. NoSQL performances are very
     high when compared to traditional RDBMS Queries.
@@ -172,6 +184,8 @@ Database Migrations are always cumbersome and it is better to plan well
 ahead and take an iterative approach. Based on the need of application,
 one have to choose which NoSQL database we are going to migrate to
 [@aws].
+
+:o: sentence missing that introduces the next sections
 
 ### Planning
 
