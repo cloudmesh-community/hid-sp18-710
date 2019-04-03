@@ -23,17 +23,17 @@ traditional databases. Need of the hour is not just to limit the data
 within the structure, but also ability and flexibility to read and store
 data from all sources and types, with or without structure. Companies
 that has larger amount of unstructured data are shifting away from
-traditional relational databases to NoSQL [@neal]. There are lot of
-limiting factors in these databases for Big Data especially Structured
-schema which was one of the main reason for RDBMS to scale it for larger
-databases [@aspire].
+traditional relational databases to NoSQL [@hid-sp18-710-neal]. There are 
+lot oflimiting factors in these databases for Big Data especially 
+Structuredschema which was one of the main reason for RDBMS to scale it 
+for larger databases [@hid-sp18-710-aspire].
 
 ## Limitation of RDBMS
 
 Choice of database chosen depends on their data model, data access and
 data latency. But in this era, every organization needs all three at the
 same time and which can not be provided by traditional databases
-[@vish].
+[@hid-sp18-710-vish].
 
 Scalability - RDBMS are designed for scaling up meaning if storage needs
 to be increased, we need to upgrade other resources in the existing
@@ -60,33 +60,27 @@ traditional way of data warehouse and ETL.
 > "The term NoSQL was first used by Carlo Strozzi to name a database
 > management system (DBMS) he developed. This system explicitly avoided
 > SQL as querying language, while it was still based on a relational
-> model" [@seasupenn]. 
+> model" [@hid-sp18-710-seasupenn]. 
 
 The term NoSQL means that the database does not
 follow the relational model espoused by E.F Codd in his 1970 paper, 
 
-> "A
-> Relational Model of Data for Large Shared Data Banks which would become
-> the basis for all modern RDBMS\" [@rdbms]. 
+> "A Relational Model of Data for Large Shared Data Banks which would 
+> become the basis for all modern RDBMS\" [@hid-sp18-710-rdbms]. 
 
-NoSQL does not mean NO to
-SQL. It means Not Only SQL. NoSQL means storage is just nonvolatile
-object store with no maintenance concerns. Most NoSQL Databases are open
-source which allows everyone to evaluate the tool of their choice at low
-cost. NoSQL databases, because of it's simpler data model, it does not
-need DBA's to maintain the health of the database. NoSQL databases are
-widely used in big data and in real-time applications.
+NoSQL does not mean NO to SQL. It means Not Only SQL. NoSQL means storage
+is just nonvolatile object store with no maintenance concerns. Most NoSQL
+Databases are open source which allows everyone to evaluate the tool of
+their choice at low cost. NoSQL databases, because of it's simpler data
+model, it does not need DBA's to maintain the health of the database.
+NoSQL databases are widely used in big data and in real-time applications.
 
 ## NoSQL Types
 
-In Edlich et al. :o:MISSINGREF
-
-identify four classes of NoSQL systems as *Core-NoSQL*
+In Edlich et al. identify four classes of NoSQL systems as *Core-NoSQL*
 systems. NoSQL systems are primarily differentiated by data model and
 also on how the data is stored. They are Key-Value stores, Wide column
-stores, Graph databases and Document stores [@edmodel].
-
-:o: markdown error
+stores, Graph databases and Document stores [@hid-sp18-710-edmodel].
 
 Key-Value Stores - Key is the unique identifier or label of an item whose data or
     its location is stored in the value. It is very basic non relational
@@ -116,11 +110,11 @@ horizontal scalability and do not enforce schema. RDBMS scales up
 vertically making single CPU works faster and performance can be
 increased adding extra CPU or RAM, whereas a NoSQL database scales
 horizontally by making many CPUs works together and also by dividing the
-jobs into multiple chunks [@datastax]. It is very flexible and let the
+jobs into multiple chunks [@hid-sp18-710-datastax]. It is very flexible and let the
 users to decide to use the data the way they want. Data localization in
 NoSQL databases is acheived by distributing it across many geographic
 regions. NoSQL databases does not have need specific applications or
-hardwares to implement replication [@mongo]. Since NoSQL does not
+hardwares to implement replication [@hid-sp18-710-mongo]. Since NoSQL does not
 enforce atomicity and hence it is not reliable where data accuracy is
 very critical. The main advantage of NoSQL is its data is always
 replicated on each node and so the data is always available and there is
@@ -137,15 +131,15 @@ move away slowly from traditional databases but there are many
 challenges to overcome. RDBMS are much more matured, been around for
 many years and the best technical support is available. So there is
 always fear of unknown until the technology gets widely accepted and
-used [@neal]. Most of the NoSQL databases are open source and support
-and reassurance that any organization gets from their traditional RDBMS
-vendors are challenged. Even though NoSQL goal is to provide no admin
-solution,in current trend, it requires lots of skills to maintain and
-learn. It is highly tempting for any organization to adopt living edge
-technology, but that adoption needs to be embraced with selection of
-best tool and with extreme caution [@dbkumar]. Ad-hoc query analysis is
-quite complex in NoSQL databases and it requires expertise to write even
-a simple query.
+used [@hid-sp18-710-neal]. Most of the NoSQL databases are open source 
+and support and reassurance that any organization gets from their 
+traditional RDBMS vendors are challenged. Even though NoSQL goal is to
+provide no admin solution,in current trend, it requires lots of skills
+to maintain and learn. It is highly tempting for any organization to adopt
+living edge technology, but that adoption needs to be embraced with selection
+of best tool and with extreme caution [@hid-sp18-710-dbkumar]. Ad-hoc query
+analysis is quite complex in NoSQL databases and it requires expertise to
+write even a simple query.
 
 ## NoSQL For Big Data
 
@@ -156,20 +150,18 @@ organization is dealing with. Based on the project requirements, If the
 real time updates is needed to perform data analytics, NoSQL is the
 solution for applications that receives large volume of data in a real
 time and where data insights are generated using real time data that was
-fed [@datastax]. NoSQL is the best fit where the enterprise does not
+fed [@hid-sp18-710-datastax]. NoSQL is the best fit where the enterprise does not
 require complex messaging features for publishing/subscribing. NoSQL
 comes handy where data structure is not restricted by schema(schema less
 design). Many NoSQL database compromises consistency over availability
-and data partition [@volt].
+and data partition [@hid-sp18-710-volt].
 
 ## How to handle Relational Data in NoSQL
 
 NoSQL database in general can not perform joins between data structures
 and hence the schema has to be designed in such a way so that it can
-support joins [@vish]. Below are the key things that needs to be
+support joins [@hid-sp18-710-vish]. Below are the key things that needs to be
 considered to handle relational data in a NoSQL.
-
-:o: markdown error
 
 Avoid Sub Queries - Instead of using complex sub queries or nested joins to retrieve
     the data, break into multiple queries. NoSQL performances are very
@@ -182,10 +174,7 @@ Denormalize the Data - For faster retrieval of data, it is essential to compromi
 
 Database Migrations are always cumbersome and it is better to plan well
 ahead and take an iterative approach. Based on the need of application,
-one have to choose which NoSQL database we are going to migrate to
-[@aws].
-
-:o: sentence missing that introduces the next sections
+one have to choose which NoSQL database we are going to migrate to [@hid-sp18-710-aws].
 
 ### Planning
 
@@ -193,7 +182,7 @@ The goal of any migration should be better performance at the reduced
 cost with the newest technology. While migrating from RDBMS, we have to
 consider volume and source of data that is going to be migrated to
 NoSQL. All the details should be documented well so that we do not have
-to face unplanned surprises at the end [@mongrdbms].
+to face unplanned surprises at the end [@hid-sp18-710-mongrdbms].
 
 ### Data Analysis
 
@@ -201,14 +190,14 @@ This is very critical and will help in understanding the nature of the
 data and how that data is accessed within the application. Based on the
 analysis of data usage, we will be able to define how data will be
 read/written which will help us in building a better data model
-[@mongrdbms].
+[@hid-sp18-710-mongrdbms].
 
 ### Data Modeling
 
 When migrating from any RDBMS, depending on the need of application, we
 may have to sometimes denormalize the data. In this phase, based on the
 data analysis and the tech-stream, we have to define keys and values
-[@aws].
+[@hid-sp18-710-aws].
 
 ### Testing
 
@@ -216,7 +205,7 @@ Testing is always very critical and crucial for any migration projects.
 We have to define all possible test cases and different types of
 testing: unit, functional, load, integration, user acceptance and smoke
 testing have to be performed and outputs have to be clearly documented
-[@aws].
+[@hid-sp18-710-aws].
 
 ### Data Migration
 
@@ -242,12 +231,8 @@ migrating into No SQL.
 
 ## Acknowledgement
 
-:o: this should go in the README.yml
-
 My sincere thanks to my mentor and leader Vishal Baijal and to my
 colleague Michael Macal for their support and suggestions to write this
 paper and also to my fellow classmate Andres Castro Benavides for his
 support. My special thanks to Dr. Gregor von Laszewski for his support
 in fine tuning the paper.
-
-:o: bibtex refernces ar missing
