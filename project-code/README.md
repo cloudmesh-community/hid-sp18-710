@@ -5,9 +5,9 @@
 ## Dataset
 
 The data is downloaded from the below website
-http://www.gunviolencearchive.org/
+https://data.world/azel/gun-deaths-in-america
 
-For this analysis we will use the data set from the gun violence archive which contains data from the year 2013 to 2018 
+For this analysis we will use the data set from the year 2013 to 2017.
 
 
 ## Requirements
@@ -42,5 +42,6 @@ The following python packages need to be installed before we can run the code in
      pip install plotly
      pip install cufflinks
      conda install basemap
+     
      
       ```
