@@ -1,4 +1,4 @@
-# Gun Violence in USA
+# Gun Violence in America
 | Uma M Kugan
 | umakugan@iu.edu
 | Indiana University Bloomington
@@ -12,7 +12,7 @@ Keywords: Gun Violence, Scikit, Fbprophet, Decision Tree, KNN, Random Forest
 
 ---
 
-##Abstract
+## Abstract
 Gun Violence is always been the topic of debate and concern. Gun violence also affects
 more than its victims. In areas where it is prevalent, just the threat of violence makes
 neighborhoods poorer. Guns are also involved in suicides and accidents. Exploring 
@@ -24,7 +24,7 @@ handling and storage of the weapons where crime rate is high. In this paper
 gun violence data has been analyzed to understand if there are any patterns or trend in
 increase in violence and also to predicting if the shooting victim is white or black.
 
-##Introduction
+## Introduction
 Gun Violence in America According to CDC, "One person is killed by a firearms every 17 minutes, 
 87 people are killed during an average day, and 609 are killed every week". 
 Weapon brutality regardless of whether a man slaughters, suicides, or mischances-slaughters 
@@ -37,7 +37,7 @@ will probably succeed and ambushes will probably progress toward becoming crimes
 Some exploration has shown that amassing weapons and the interest
 with firearms is a pointer of standoffish conduct. 
 
-##Relevant Existing Work 
+## Relevant Existing Work 
 We can find in the internet there are some organization who are collecting or 
 using data from CDC to understand the trending and present data in various form
 for everyone to easily understand [@national1977vital]. Mother Jones have 
@@ -49,7 +49,7 @@ and issues related to gun safety and accidents [@everytown]. All these organizat
 are trying to draw some insights from the data sets and see if they can predict and stop the
 violence before it occurs.
 
-##Data Collection and Preparation
+## Data Collection and Preparation
 The dataset we used in this project is collected from five thirty eight's gun deaths in America
 using the R code from "https://data.world/azel/gun-deaths-in-america" [@data_world].
 The dataset has data from the year 2013-2017.
@@ -60,7 +60,7 @@ We used Python which is a high-level object-oriented programming language, most
 popular due to high availability of large collection of free libraries for this 
 project.
 
-##The Dataset
+## The Dataset
 The dataset contains various information about victims of gun violence. Each row of the data set contains
 the year and month of the shooting, the intent of the shooter, whether the police were at the
 scene or not, the gender, age race and education level of the victim and finally the place 
@@ -87,8 +87,7 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](C:\Users/gauth/Desktop/Project/images/actual_dataset.PNG)
-*Figure 1 - Snapshot Of Actual Dataset*
+![Snapshot Of Actual Dataset](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset]}
 
 ##Technologies Used
 **Pandas:** Pandas is an open source library that provides tools for data mining and
