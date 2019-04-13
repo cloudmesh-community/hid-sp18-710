@@ -87,7 +87,7 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset}
+![image](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
 
 ## Technologies Used
 **Pandas:** Pandas is an open source library that provides tools for data mining and
@@ -197,9 +197,7 @@ The Figure 3 illustrates a simple KNN classifier. Here, if k = 3, the green circ
 question would be categorized as a red triangle. If k=5, then it would be categorized
 as a blue square.
 
-![image](images/knn_classifier.PNG)
-*Figure 3 - KNN Classifier* 
-
+![image](images/knn_classifier.PNG){#fig:KNN Classifier|
 
 ##Random Forest
 Random forest classifier creates multiple decision trees from a randomly selected 
@@ -209,8 +207,7 @@ construct a decision tree for each sample and get a prediction result from each
 decision tree. Then Perform a vote for each predicted outcome and prediction
 with the most votes as the final prediction [@breiman2001random].
 
-![image](images/random_f.png)
-*Figure 4  Random Forest [@medium_ref8]*
+![image](images/random_f.PNG){#fig:Random Forest [@medium_ref8]}
 
 ## Prophet
 Prophet is very powerful and effective in time series forecasting. There are 
@@ -233,8 +230,7 @@ do this in Prophet.
 All three models performed well, But the accuracy of single decision tree model
 was higher than the other two models.
 
-![image](images/model_perfm.png)
-*Figure 5 Model Results*
+![image](images/model_perfm.PNG){#fig:Model Results}
 
 Confusion matrix can also be used to display or describe the
 performance of the model. It contains the information about actual and
@@ -243,12 +239,9 @@ predicted classification calculated by the machine learning model.
 From the below two graphs which was generated from the output of Prophet - Forecasting
 method, it clearly shows that there is increase in tend for gun violence in next five years.
 
-![image](images/forecast_year.png)
-*Figure 6 Forecast for next five years*
+![image](images/forecast_year.png){#fig:Forecast for next five years}
 
-
-![image](images/forecast_month.png)
-*Figure 7 Forecast for next five years by year and month*
+![image](images/forecast_month.png){#fig:Forecast for next five years by year and month}
 
 
 ## Graphical Analysis Results
@@ -256,23 +249,18 @@ In this section, we would look at the results of graphical analysis which
 helped decide what features to include for predictions. After analyzing the data,
 we deleted the column police as  it does not contribute to our classification.
 From the bar plot below, it is obvious that majority of the data is for black or white victims.
-![image](C:/Users/gauth/Desktop/Project/images/race.png)
-*Figure 8 Race*
 
-![image](images/year.png)
-*Figure 9 Year*
+![image](images/race.png){#fig:Race}
 
-![image](images/intent.png)
-*Figure 10 Race*
+![image](images/year.png){#fig:Year}
 
-![image](images/location.png)
-*Figure 11 Location*
+![image](images/intent.png){#fig:Intent}
 
-![image](images/incidentcnt.png)
-*Figure 12 Incident Count*
+![image](images/location.png){#fig:Location}
 
-![image](images/sex.png)
-*Figure 13 Sex Of Victims*
+![image](images/incidentcnt.png){#fig:Incident Count}
+
+![image](images/sex.png){#fig:Sex Of Victims}
 
 From the above graphs we can infer that most of the victims are male and the number
 of shootings have been slightly increasing year after another. The majority of the
@@ -283,8 +271,7 @@ The Figure below shows that for black and white victim, the intent seems to be a
 deciding factor, and the other three factors being age, gender and place. 
 The education levels seems to have very less effect on deciding the race of the victim. 
 
-![image](images/feature.png)
-*Figure 14 Feature*
+![image](images/feature.png){#fig:Feature}
 
 
 ## Limitations
