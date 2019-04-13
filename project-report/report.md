@@ -87,8 +87,7 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](images/actual_dataset.png){#fig:actual_dataset.png}
-
+![image](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset}
 
 ## Technologies Used
 **Pandas:** Pandas is an open source library that provides tools for data mining and
@@ -141,8 +140,7 @@ we need to prepare this data by converting categorical text data into model-unde
 numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, 
 fit and transform the data, and then replace the existing text data with the new encoded data [@medium_enocde].
 
-![image](images/afterlabelencode.PNG)
-*Figure 2 - After Label Encode*
+![image](images/afterlabelencode.PNG){#fig:After Label Encode}
 
 ##Data Slicing
 Data slicing is the process to split data into train and test set. Training data set 
@@ -181,8 +179,7 @@ The accuracy we got from implementing the decision model is 87%. Accuracy is the
 correctly predicted data points to all the predicted data points. The value of accuracy determines
 the effectiveness of our algorithm.
 
-![image](images/decision_tree.PNG)
-*Figure 3 - Decision Tree* 
+![image](images/decision_tree.PNG){#fig:Decision Tree} 
 
 ## K- Nearest Neighbor
 According to the K-Nearest Neighbor (KNN) algorithm, data is classified into
