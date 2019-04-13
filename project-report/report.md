@@ -87,7 +87,7 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](images/actual_dataset.png){#fig:actual_dataset.png]}
+![image](images/actual_dataset.png){#fig:actual_dataset.png}
 
 
 ## Technologies Used
