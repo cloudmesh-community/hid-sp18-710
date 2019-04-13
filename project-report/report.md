@@ -87,7 +87,7 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset]}
+![image](images/actual_dataset.png){#fig:actual_dataset.png]}
 
 
 ## Technologies Used
@@ -99,7 +99,7 @@ consumption by specific machine learning algorithms.
 perform scientific and mathematical operations on the same. NumPy was used in this
 project to perform some basic mathematical operations.
 
-**Scikit-learn:** scikit-learn [16] is an open-source Python machine learning library
+**Scikit-learn:** scikit-learn is an open-source Python machine learning library
 which provides numerous classification, regression and clustering algorithms. This
 library was used in this project to perform the actual task of model building and
 prediction. It provides a variety of evaluation metrics to validate the performance of
@@ -200,7 +200,7 @@ The Figure 3 illustrates a simple KNN classifier. Here, if k = 3, the green circ
 question would be categorized as a red triangle. If k=5, then it would be categorized
 as a blue square.
 
-![image](C:\Users/gauth/Desktop/Project/images/knn_classifier.PNG)
+![image](images/knn_classifier.PNG)
 *Figure 3 - KNN Classifier* 
 
 
@@ -212,7 +212,7 @@ construct a decision tree for each sample and get a prediction result from each
 decision tree. Then Perform a vote for each predicted outcome and prediction
 with the most votes as the final prediction [@breiman2001random].
 
-![image](C:/Users/gauth/Desktop/Project/images/random_f.png)
+![image](images/random_f.png)
 *Figure 4  Random Forest [@medium_ref8]*
 
 ## Prophet
@@ -236,7 +236,7 @@ do this in Prophet.
 All three models performed well, But the accuracy of single decision tree model
 was higher than the other two models.
 
-![image](C:/Users/gauth/Desktop/Project/images/model_perfm.png)
+![image](images/model_perfm.png)
 *Figure 5 Model Results*
 
 Confusion matrix can also be used to display or describe the
@@ -246,11 +246,11 @@ predicted classification calculated by the machine learning model.
 From the below two graphs which was generated from the output of Prophet - Forecasting
 method, it clearly shows that there is increase in tend for gun violence in next five years.
 
-![image](C:/Users/gauth/Desktop/Project/images/forecast_year.png)
+![image](images/forecast_year.png)
 *Figure 6 Forecast for next five years*
 
 
-![image](C:/Users/gauth/Desktop/Project/images/forecast_month.png)
+![image](images/forecast_month.png)
 *Figure 7 Forecast for next five years by year and month*
 
 
@@ -262,19 +262,19 @@ From the bar plot below, it is obvious that majority of the data is for black or
 ![image](C:/Users/gauth/Desktop/Project/images/race.png)
 *Figure 8 Race*
 
-![image](C:/Users/gauth/Desktop/Project/images/year.png)
+![image](images/year.png)
 *Figure 9 Year*
 
-![image](C:/Users/gauth/Desktop/Project/images/intent.png)
+![image](images/intent.png)
 *Figure 10 Race*
 
-![image](C:/Users/gauth/Desktop/Project/images/location.png)
+![image](images/location.png)
 *Figure 11 Location*
 
-![image](C:/Users/gauth/Desktop/Project/images/incidentcnt.png)
+![image](images/incidentcnt.png)
 *Figure 12 Incident Count*
 
-![image](C:/Users/gauth/Desktop/Project/images/sex.png)
+![image](images/sex.png)
 *Figure 13 Sex Of Victims*
 
 From the above graphs we can infer that most of the victims are male and the number
@@ -286,7 +286,7 @@ The Figure below shows that for black and white victim, the intent seems to be a
 deciding factor, and the other three factors being age, gender and place. 
 The education levels seems to have very less effect on deciding the race of the victim. 
 
-![image](C:/Users/gauth/Desktop/Project/images/feature.png)
+![image](images/feature.png)
 *Figure 14 Feature*
 
 
