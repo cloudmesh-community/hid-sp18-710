@@ -39,7 +39,7 @@ from fbprophet.diagnostics import performance_metrics
 
 
 #load dataset
-file_location ='C:/Users/gauth/downloads/full_data.csv'
+file_location ='full_data.csv'
 gv_dataset = pd.read_csv(file_location)
 
 # remove rows with NA 
