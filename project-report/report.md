@@ -28,9 +28,9 @@ increase in violence and also to predicting if the shooting victim is white or b
 Gun Violence in America According to CDC, "One person is killed by a firearms every 17 minutes, 
 87 people are killed during an average day, and 609 are killed every week". 
 Weapon brutality regardless of whether a man slaughters, suicides, or mischances-slaughters 
-around 30,000 Americans consistently and harms 70,000 more [@gunviolence]. 
+around 30,000 Americans consistently and harms 70,000 more [@hid-sp18-710-gunviolence]. 
 At 31.2 passing's for every million individuals, Americans are nearly as prone to pass on toward
-the finish of a weapon as they are in an auto collision [@gunviolence]. 
+the finish of a weapon as they are in an auto collision [@hid-sp18-710-gunviolence]. 
 There is adequate worldwide research that proposes the accessibility of weapons expands the 
 danger of deadly brutality. At the point when weapons are available, suicide endeavors 
 will probably succeed and ambushes will probably progress toward becoming crimes. 
@@ -40,18 +40,18 @@ with firearms is a pointer of standoffish conduct.
 ## Relevant Existing Work 
 We can find in the internet there are some organization who are collecting or 
 using data from CDC to understand the trending and present data in various form
-for everyone to easily understand [@national1977vital]. Mother Jones have 
-investigated and analyzed data from 1982-2018 on US Mass Shootings [@follman2012guide]. 
+for everyone to easily understand [@hid-sp18-710-national1977vital]. Mother Jones have 
+investigated and analyzed data from 1982-2018 on US Mass Shootings [@hid-sp18-710-follman2012guide]. 
 Fivethirtyeight.com have an interactive graphics as part of their project to explore
-the more than 33,000 annual gun deaths in America [@casselman2016gun]. Every-town 
+the more than 33,000 annual gun deaths in America [@hid-sp18-710-casselman2016gun]. Every-town 
 gun safety is trying to get crowd  source funding and analyzing the various facts 
-and issues related to gun safety and accidents [@everytown]. All these organizations, 
+and issues related to gun safety and accidents [@hid-sp18-710-everytown]. All these organizations, 
 are trying to draw some insights from the data sets and see if they can predict and stop the
 violence before it occurs.
 
 ## Data Collection and Preparation
 The dataset we used in this project is collected from five thirty eight's gun deaths in America
-using the R code from "https://data.world/azel/gun-deaths-in-america" [@data_world].
+using the R code from "https://data.world/azel/gun-deaths-in-america" [@hid-sp18-710-data_world].
 The dataset has data from the year 2013-2017.
 Data preparation is the process of transforming raw data to draw some valuable
 insights or make some predictions based on the past. Data Preparation will be
@@ -108,7 +108,7 @@ the model, which makes it a valuable tool.
 model where non-linear trends are fit with yearly, weekly, and daily seasonality, 
 plus holiday effects. It works best with time series that have strong seasonal effects 
 and several seasons of historical data. Prophet is robust to missing data and shifts 
-in the trend, and typically handles outliers well [@taylor_prophet].
+in the trend, and typically handles outliers well [@hid-sp18-710-taylor_prophet].
 
 ## Data Preprocessing
 The original dataset is modified to create a new dataset where new columns are
@@ -138,7 +138,7 @@ Some of the columns in our data set contains text data. In order to run any mach
 model against the data, we can’t have text in our data. So before we run any kind of model,
 we need to prepare this data by converting categorical text data into model-understandable 
 numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, 
-fit and transform the data, and then replace the existing text data with the new encoded data [@medium_enocde].
+fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_enocde].
 
 ![image](images/afterlabelencode.PNG){#fig:After Label Encode}
 
@@ -158,13 +158,13 @@ interpret. The major drawback of decision tree is that they tend to over fit the
 Decision Tree classifiers use decision trees to make a prediction about the value
 of a target variable. The decision trees are basically functions that successively
 determine the class that the input needs to be assigned. A decision tree contains a 
-root node, interior nodes and leaf nodes [@decision_tree1]. The interior nodes are the 
+root node, interior nodes and leaf nodes [@hid-sp18-710-decision_tree1]. The interior nodes are the 
 splitting nodes, i.e. based on the condition specified in the function at these nodes, the tree is 
 split into two or more branches.The main advantage in a decision tree classifier is that
 an input is tested against only specific subsets of the data which eliminates unnecessary
-computations [@decision_tree2]. Another advantage of Decision Trees is that we can use a feature selection
+computations [@hid-sp18-710-decision_tree2]. Another advantage of Decision Trees is that we can use a feature selection
 algorithm to make a decision on which features can be used for the decision tree classifier. 
-The lesser the number of features, better the efficiency of the algorithm [@decision_tree1]. 
+The lesser the number of features, better the efficiency of the algorithm [@hid-sp18-710-decision_tree1]. 
 
 The important parameters of decision tree classifiers used in our model:
 
@@ -191,7 +191,7 @@ we predict the label of this new point. For computing the distance measures
 such as Euclidean distance, Hamming distance or Manhattan distance will be used. 
 Model picks K entries which is the number of neighbors to consider which are closest
 to the new data point. Then it does the majority vote i.e the most common class/label 
-among those K entries will be the class of the new data point [@knn_algo].
+among those K entries will be the class of the new data point [@hid-sp18-710-knn_algo].
 
 The Figure 3 illustrates a simple KNN classifier. Here, if k = 3, the green circle in
 question would be categorized as a red triangle. If k=5, then it would be categorized
@@ -205,9 +205,9 @@ subset of the training set and then aggregates them to decide the final class of
 the test object. We need first to choose random samples from a given data set, 
 construct a decision tree for each sample and get a prediction result from each
 decision tree. Then Perform a vote for each predicted outcome and prediction
-with the most votes as the final prediction [@breiman2001random].
+with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![image](images/random_f.PNG){#fig:Random Forest [@medium_ref8]}
+![image](images/random_f.PNG){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
 
 ## Prophet
 Prophet is very powerful and effective in time series forecasting. There are 
@@ -221,7 +221,7 @@ class and then fit it to our data set.The future is predicted using the method
 make_future_dataframe method by passing the attributes and frequency.
 The forecast dataframe has important columns: yhat, yhat_lower and yhat_upper. 
 yhat is our predicted forecast, yhat_lower is the lower bound for our predictions 
-and yhat_upper is the upper bound for our predictions [@kd_prophet].
+and yhat_upper is the upper bound for our predictions [@hid-sp18-710-kd_prophet].
 We can also measure the forecast error using the historical data by comparing the 
 predicted values with the actual values. The cross_validation method allows us to
 do this in Prophet.
