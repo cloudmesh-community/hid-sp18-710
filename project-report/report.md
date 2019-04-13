@@ -87,9 +87,10 @@ The dataset consists of the following attributes:
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![Snapshot Of Actual Dataset](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset]}
+![image](images/actual_dataset.png){#fig:Snapshot Of Actual Dataset]}
 
-##Technologies Used
+
+## Technologies Used
 **Pandas:** Pandas is an open source library that provides tools for data mining and
 analysis using Python. It is mainly used in this project to prepare the data for
 consumption by specific machine learning algorithms.
@@ -110,7 +111,7 @@ plus holiday effects. It works best with time series that have strong seasonal e
 and several seasons of historical data. Prophet is robust to missing data and shifts 
 in the trend, and typically handles outliers well [@taylor_prophet].
 
-##Data Preprocessing
+## Data Preprocessing
 The original dataset is modified to create a new dataset where new columns are
 added, existing columns are transformed and outliers are handled. The columns are added,
 deleted or transformed based on the graphical analysis which has been performed on the data
@@ -131,7 +132,7 @@ the data before we train the model. Also there is are columns such as police and
 which is not relevant to our prediction classes and hence we ignored those columns as well
 from the actual data set.  
 
-##Label Encoding
+## Label Encoding
 Label encoding is the technique that are used to convert categorical data, or 
 text data, into numbers, so that our predictive models can better understand.
 Some of the columns in our data set contains text data. In order to run any machine learning
@@ -140,7 +141,7 @@ we need to prepare this data by converting categorical text data into model-unde
 numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, 
 fit and transform the data, and then replace the existing text data with the new encoded data [@medium_enocde].
 
-![image](C:\Users/gauth/Desktop/Project/images/afterlabelencode.PNG)
+![image](images/afterlabelencode.PNG)
 *Figure 2 - After Label Encode*
 
 ##Data Slicing
@@ -152,7 +153,7 @@ what percentage from the whole data set is test data and random_state variable i
 pseudo-random number generator state used for random sampling. After we split the data 
 set into train and test data, the machine learning algorithms are applied on training data.
 
-##Decision Trees
+## Decision Trees
 Decision Trees are an important type of algorithm for predictive modeling machine learning.
 Decision trees are simple and can be easily trained with few hyper-parameter and easy to
 interpret. The major drawback of decision tree is that they tend to over fit the data.  
@@ -180,10 +181,10 @@ The accuracy we got from implementing the decision model is 87%. Accuracy is the
 correctly predicted data points to all the predicted data points. The value of accuracy determines
 the effectiveness of our algorithm.
 
-![image](C:\Users/gauth/Desktop/Project/images/decision_tree.PNG)
+![image](images/decision_tree.PNG)
 *Figure 3 - Decision Tree* 
 
-##K- Nearest Neighbor
+## K- Nearest Neighbor
 According to the K-Nearest Neighbor (KNN) algorithm, data is classified into
 one of the many categories by taking a majority vote of its neighbors. 
 It keeps all the training data to make future predictions by computing the similarity
@@ -214,7 +215,7 @@ with the most votes as the final prediction [@breiman2001random].
 ![image](C:/Users/gauth/Desktop/Project/images/random_f.png)
 *Figure 4  Random Forest [@medium_ref8]*
 
-##Prophet
+## Prophet
 Prophet is very powerful and effective in time series forecasting. There are 
 few tools that are in industry for forecasting. We can compare these tools 
 and use the one that gives the best predictions with the least amount of errors.
@@ -231,7 +232,7 @@ We can also measure the forecast error using the historical data by comparing th
 predicted values with the actual values. The cross_validation method allows us to
 do this in Prophet.
 
-##Experimental Results
+## Experimental Results
 All three models performed well, But the accuracy of single decision tree model
 was higher than the other two models.
 
@@ -253,7 +254,7 @@ method, it clearly shows that there is increase in tend for gun violence in next
 *Figure 7 Forecast for next five years by year and month*
 
 
-##Graphical Analysis Results
+## Graphical Analysis Results
 In this section, we would look at the results of graphical analysis which
 helped decide what features to include for predictions. After analyzing the data,
 we deleted the column police as  it does not contribute to our classification.
@@ -289,19 +290,19 @@ The education levels seems to have very less effect on deciding the race of the 
 *Figure 14 Feature*
 
 
-##Limitations
+## Limitations
 In this project we have implemented simple single binary classification model.
 This project can be further enhanced and extended to build a multi classification
 model for the entire CDC multiple causes of death dataset 
 
-##Conclusion
+## Conclusion
 In this project, a detailed analysis of gun violence was conducted and prediction 
 models were trained using three machine learning algorithms and the trending forecast was 
 also implemented and studied.It would be interesting to study if there are more factors
 like population data, gun laws data that contributes to the violence.
 
 
-##Acknowledgements
+## Acknowledgements
 The author would like to thank Dr.Gregor von Laszewski for his continued support and 
 suggestions in writing this report and successfully completing the project.
 This project would not have been complete without his dedicated support and encouragements
