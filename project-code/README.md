@@ -42,6 +42,6 @@ The following python packages need to be installed before we can run the code in
      pip install plotly
      pip install cufflinks
      conda install basemap
-     
+     pip install prophet
      
       ```
