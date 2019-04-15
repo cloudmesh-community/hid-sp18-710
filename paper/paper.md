@@ -1,7 +1,5 @@
 # NoSQL Databases in Support of Big Data and Analytics :wave:
 
-  
-
 | Uma M Kugan 
 | umakugan@iu.edu
 | Indiana University Bloomington 
