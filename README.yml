@@ -19,7 +19,7 @@ paper1:
     keywords: NoSQL, Bigdata, RDBMS
     chapter: Technology
     group: hid-sp18-710
-    url: https://github.com/cloudmesh-community/hid-sp18-710/tree/master/paper/paper.md.   
+    url: https://github.com/cloudmesh-community/hid-sp18-710/tree/master/paper/paper.md 
     status: "100% Review Date 11.10.2017"
 paper2:
   - title: Big Data Security and Privacy
