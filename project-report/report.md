@@ -106,7 +106,7 @@ In the below Figure the green circle in question would be categorized as a red t
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![image](images/random_f.PNG){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
+![image](images/random_f.png){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
 
 ## Prophet
 A prophet is more powerful and effective in time series forecasting. Only very few tools are in the industry for forecasting. We can compare these tools and use the one that gives the best predictions with the least amount of errors. In this project, we used the prophet as it is easier to implement. Pystan is the vital module on which Prophet depends which will be installed automatically when a prophet is installed. When implementing the model, first we need to create an instance of the Prophet class and then fit it to our data set. The future is predicted using the method make_future_dataframe method by passing the attributes and frequency. The forecast dataframe has important columns: yhat which is our predicted forecast, yhat_lower contains the lower bound for our predictions and yhat_upper which is the upper bound for our predictions [@hid-sp18-710-kd_prophet]. The cross_validation method is used to measure the forecast error by comparing the predicted values and the actual values using the historical data. 
