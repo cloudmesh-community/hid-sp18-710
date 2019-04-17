@@ -2,6 +2,8 @@
 
 :o: figures not done correctly
 
+:o: fix markdown erros so that you do not have verbatim where you like to use lists, see markdown documentation
+
 | Uma M Kugan
 | umakugan@iu.edu
 | Indiana University Bloomington
