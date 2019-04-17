@@ -1,5 +1,7 @@
 # Gun Violence in America
 
+:o: figures not done correctly
+
 | Uma M Kugan
 | umakugan@iu.edu
 | Indiana University Bloomington
