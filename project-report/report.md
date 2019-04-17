@@ -1,4 +1,5 @@
 # Gun Violence in America
+
 | Uma M Kugan
 | umakugan@iu.edu
 | Indiana University Bloomington
@@ -13,18 +14,23 @@ Keywords: Gun Violence, Scikit, Fbprophet, Decision Tree, KNN, Random Forest
 ---
 
 ## Abstract
+
 Gun Violence has always been the topic of debate and concern. Gun violence not only impacts its victims, but it also affects the entire community.  Just the threat of violence makes neighborhoods weaker. Guns are also involved in suicides and accidents. Exploring the data set will help us find an answer for our fear what if I and people around me are likely to be killed by a gun. Even though it is an unnecessary fear, it will at least give us a deeper understanding of how the data looks like and draw some insights. The only way to prevent gun violence is to raise the awareness of improper handling and storage of the weapons where the crime rate is high. In this paper gun violence data has been analyzed to understand if there are any patterns or trend in the increase in violence and also to predicting if the shooting victim is white or black.
 
 ## Introduction
+
 Gun Violence in America According to CDC, "One person is killed by firearms every 17 minutes, 87 people are killed during an average day, and 609 are killed every week". Weapon brutality regardless of whether a man slaughters, suicides, or mischances-slaughters around 30,000 Americans consistently and harms 70,000 more [@hid-sp18-710-gunviolence]. At 31.2 passing's for every million individuals, Americans are nearly as prone to pass on toward the finish of a weapon as they are in an auto collision [@hid-sp18-710-gunviolence]. There is adequate worldwide research that proposes the accessibility of weapons expands the danger of deadly brutality. At the point when weapons are available, suicide endeavors will probably succeed, and ambushes will probably progress toward becoming crimes. Some exploration has shown that amassing weapons and the interest with firearms is a pointer of standoffish conduct.
 
 ## Relevant Existing Work 
+
 We can find on the internet there is some organization who are collecting or using data from CDC to understand the trending and present data in various form for everyone to easily understand [@hid-sp18-710-national1977vital]. Mother Jones has investigated and analyzed data from 1982-2018 on US Mass Shootings [@hid-sp18-710-follman2012guide]. Fivethirtyeight.com have interactive graphics as part of their project to explore the more than 33,000 annual gun deaths in America [@hid-sp18-710-casselman2016gun]. Every-town gun safety is trying to get crowdsource funding and analyzing the various facts and issues related to gun safety and accidents [@hid-sp18-710-everytown]. All these organizations, are trying to draw some insights from the data sets and see if they can predict and stop the violence before it occurs.
 
 ## Data Collection and Preparation
+
 The dataset we used in this project was collected from five thirty-eight's gun deaths in America using the R code from "https://data.world/azel/gun-deaths-in-america" [@hid-sp18-710-data_world]. The dataset has data from the year 2013-2017. The preparation of data is the process of transforming raw data to draw some valuable insights or make some predictions based on the past. Data Preparation will be difficult if the data have improper values or nulls. We used Python which is a high-level object-oriented programming language, most popular due to the high availability of an extensive collection of free libraries for this project.
 
 ## The Dataset
+
 The dataset contains various information about victims of gun violence. Each row of the data set includes the year and month of the shooting, the intent of the shooter, whether the police were at the scene or not, the gender, age race and education level of the victim and finally the place where the shooting happened. The dataset also has a specific column that says if the victim is Hispanic or not. The dataset consists of the following attributes:
 
 	- Year: It is a numerical field and holds the year of the shooting.
@@ -78,9 +84,11 @@ Label encoding is the technique that is used to convert categorical data, or tex
 ![image](images/afterlabelencode.PNG){#fig:After Label Encode}
 
 ## Data Slicing
+
 The Data slicing is the process to split data into train and test set.  The model is initially trained only with the train data.  The test data set should not be mixed up while building a model. We can use sklearn’s train_test_split method to split the data into random train and test subsets of data. The three main parameters data set, test_size which represents what percentage from the whole data set is test data and random_state variable is a pseudo-random number generator state used for random sampling. After we split the data set into train and test data, the machine learning algorithms are applied to training data.
 
 ## Decision Trees
+
 Decision Trees are a simple and essential type of algorithm for predictive modeling machine learning. Decision trees can be easily trained with few hyper-parameter and easy to interpret. The major drawback of the decision tree is that they tend to overfit the data.
 Decision Tree classifiers use decision trees to predict the value of a target variable. The decision trees are functions that are used to find which class the input nodes belong. A decision tree contains three nodes: root node, interior nodes and leaf nodes [@hid-sp18-710-decision_tree1].  Based on the condition specified in the function at internal nodes, the tree was split into two or more branches. And that's the reason why interior nodes are called s split nodes. The main advantage in a decision tree classifier is that input is tested against only specific subsets of the data which eliminates unnecessary computations [@hid-sp18-710-decision_tree2]. Another advantage is that we can use a feature selection algorithm to make a decision on which features can be used for the decision tree classifier — the lesser the number of features, the better the efficiency of the algorithm [@hid-sp18-710-decision_tree1].
 
@@ -96,7 +104,8 @@ The accuracy we got from implementing the decision model is 87%. Accuracy is the
 
 ![image](images/decision_tree.PNG){#fig:Decision Tree} 
 
-## K- Nearest Neighbor
+## K-Nearest Neighbor
+
 KNN  algorithms used mainly for both classification and regression predictive problems. The majority of the vote is taken to classify the data into one of the many categories. The labels for the new points are predicted by computing the distance between the new item and every item in the training data-set using Euclidean, Hamming or Manhattan distance. The model picks K entries which are the number of neighbors to consider which are closest to the new point. Then finally it conducts a majority vote among those data points. The most common class among those K entries will be the class of the new data point. There is no explicit training phase before the classification. KNN model keeps all the training data, and that is the reason why KNN falls under lazy learning [@hid-sp18-710-knn_algo].
 
 In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
@@ -109,9 +118,11 @@ Random forest classifier creates many decision trees from a randomly selected su
 ![image](images/random_f.png){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
 
 ## Prophet
+
 A prophet is more powerful and effective in time series forecasting. Only very few tools are in the industry for forecasting. We can compare these tools and use the one that gives the best predictions with the least amount of errors. In this project, we used the prophet as it is easier to implement. Pystan is the vital module on which Prophet depends which will be installed automatically when a prophet is installed. When implementing the model, first we need to create an instance of the Prophet class and then fit it to our data set. The future is predicted using the method make_future_dataframe method by passing the attributes and frequency. The forecast dataframe has important columns: yhat which is our predicted forecast, yhat_lower contains the lower bound for our predictions and yhat_upper which is the upper bound for our predictions [@hid-sp18-710-kd_prophet]. The cross_validation method is used to measure the forecast error by comparing the predicted values and the actual values using the historical data. 
 
 ## Experimental Results
+
 All three models performed well, But the accuracy of single decision tree model was higher than the other two models.
 
 ![image](images/model_perfm.PNG){#fig:Model Results}
