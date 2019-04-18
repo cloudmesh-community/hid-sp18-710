@@ -85,7 +85,7 @@ Since we are interested in only two classes, we are removing the rest of the cla
 ## Label Encoding
 Label encoding is the technique that is used to convert categorical data, or text data, into numbers, so that our predictive models can better understand. Some of the columns in our data set contain text data. To run any machine learning model against the data, we can’t have text in our data. So before we run any kind of model, we need to prepare this data by converting categorical text data into model-understandable numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_enocde].
 
-![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:LabelEncode}
+![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:After Label Encode}
 
 ## Data Slicing
 
@@ -106,7 +106,7 @@ The important parameters of decision tree classifiers used in our model:
 
 The accuracy we got from implementing the decision model is 87%. Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
-![Decision Tree |10*10](images/decision_tree.PNG){#fig:DecisionTree} 
+![Decision Tree |10*10](images/decision_tree.PNG){#fig:Decision Tree} 
 
 ## K-Nearest Neighbor
 
@@ -114,12 +114,12 @@ KNN  algorithms used mainly for both classification and regression predictive pr
 
 In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
 
-![KNNClassifier|10*10](images/knn_classifier.PNG){#fig:KNNClassifier}
+![KNNClassifier|10*10](images/knn_classifier.PNG){#fig:KNN Classifier}
 
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![Random Forest | 10*10](images/random_f.png){#fig:RandomForest [@hid-sp18-710-medium_ref8]}
+![Random Forest | 10*10](images/random_f.png){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
 
 ## Prophet
 
