@@ -57,7 +57,7 @@ The dataset contains various information about victims of gun violence. Each row
 	
 	- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![image](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
+![Snapshot Of Actual Dataset](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
 
 ## Technologies Used
 **Pandas:** Pandas is an open source library which provides tools for data mining and analysis using Python. It was primarily used in this project to prepare the data before any specific machine learning algorithms consume the data.
@@ -85,7 +85,7 @@ Since we are interested in only two classes, we are removing the rest of the cla
 ## Label Encoding
 Label encoding is the technique that is used to convert categorical data, or text data, into numbers, so that our predictive models can better understand. Some of the columns in our data set contain text data. To run any machine learning model against the data, we can’t have text in our data. So before we run any kind of model, we need to prepare this data by converting categorical text data into model-understandable numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_enocde].
 
-![image](images/afterlabelencode.PNG){#fig:After Label Encode}
+![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:LabelEncode}
 
 ## Data Slicing
 
@@ -106,7 +106,7 @@ The important parameters of decision tree classifiers used in our model:
 
 The accuracy we got from implementing the decision model is 87%. Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
-![image](images/decision_tree.PNG){#fig:Decision Tree} 
+![Decision Tree |10*10](images/decision_tree.PNG){#fig:DecisionTree} 
 
 ## K-Nearest Neighbor
 
@@ -114,12 +114,12 @@ KNN  algorithms used mainly for both classification and regression predictive pr
 
 In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
 
-![image](images/knn_classifier.PNG){#fig:KNN Classifier|
+![KNNClassifier|10*10](images/knn_classifier.PNG){#fig:KNNClassifier}
 
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![image](images/random_f.png){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
+![Random Forest | 10*10](images/random_f.png){#fig:RandomForest [@hid-sp18-710-medium_ref8]}
 
 ## Prophet
 
@@ -129,7 +129,7 @@ A prophet is more powerful and effective in time series forecasting. Only very f
 
 All three models performed well, But the accuracy of single decision tree model was higher than the other two models.
 
-![image](images/model_perfm.PNG){#fig:Model Results}
+![Model Results](images/model_perfm.PNG){#fig:Model Results}
 
 Confusion matrix can also be used to display or describe the performance of the model. It contains the information about actual and
 predicted classification calculated by the machine learning model.
@@ -137,7 +137,7 @@ predicted classification calculated by the machine learning model.
 From the below two graphs which was generated from the output of Prophet - Forecasting
 method, it clearly shows that there is increase in tend for gun violence in next five years.
 
-![image](images/forecast_year.png){#fig:Forecast for next five years}
+![Forecast for next five years|10*10](images/forecast_year.png){#fig:Forecast for next five years}
 
 ![image](images/forecast_month.png){#fig:Forecast for next five years by year and month}
 
