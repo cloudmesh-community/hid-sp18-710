@@ -1,4 +1,4 @@
-# NoSQL Databases in Support of Big Data and Analytics :wave:
+# NoSQL Databases in Support of Big Data and Analytics 
 
 | Uma M Kugan 
 | umakugan@iu.edu
