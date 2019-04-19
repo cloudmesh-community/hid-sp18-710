@@ -37,25 +37,25 @@ The dataset we used in this project was collected from five thirty-eight's gun d
 
 The dataset contains various information about victims of gun violence. Each row of the data set includes the year and month of the shooting, the intent of the shooter, whether the police were at the scene or not, the gender, age race and education level of the victim and finally the place where the shooting happened. The dataset also has a specific column that says if the victim is Hispanic or not. The dataset consists of the following attributes:
 
-- Year: It is a numerical field and holds the year of the shooting.
+* Year: It is a numerical field and holds the year of the shooting.
 	
-- Month: It is a numerical field and holds the month of the shooting.
+* Month: It is a numerical field and holds the month of the shooting.
 	
-- Intent: It is a text field and specifies the intentention of the shooter.
+* Intent: It is a text field and specifies the intentention of the shooter.
 	 
-- Police: It is a numerical field and contains values 0 or 1 which indicates if the police were at the scene or not.
+* Police: It is a numerical field and contains values 0 or 1 which indicates if the police were at the scene or not.
 	
-- Sex: It is a text field and contains values M for Male and F for Females.
+* Sex: It is a text field and contains values M for Male and F for Females.
 	 
-- Place: It is a text field and specifies where the shooting has happened
+* Place: It is a text field and specifies where the shooting has happened
 	
-- Education: It is a text field and has the education level of the victim.
+* Education: It is a text field and has the education level of the victim.
 	
-- Race: It is a text field, and possible values are White, Black, Hispanic, Asian/Pacific Islander and Native American/Native Alaskan.
+* Race: It is a text field, and possible values are White, Black, Hispanic, Asian/Pacific Islander and Native American/Native Alaskan.
 	
-- Age: It is a numeric field and specifies the age of the victim.
+* Age: It is a numeric field and specifies the age of the victim.
 	
-- Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
+* Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
 ![Snapshot Of Actual Dataset](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
 
@@ -72,12 +72,12 @@ The dataset contains various information about victims of gun violence. Each row
 In the pre-processing stage, the original dataset is modified to create a new dataset where existing columns are transformed, and handle the outliers. The columns are added, deleted or transformed based on the graphical analysis which has been performed on the data before actually building a model.
 
 In this project, we want to if the victim is white or black. There are five classes, but we are predicting only two. The main reason to ignore other classes is that from the given data set, the rest of the classes is less than 11% of the dataset.
-	
-	White                             64.013604
-	Black                             24.472467
-	Hispanic                           9.181200
-	Asian/Pacific Islander             1.388112
-	Native American/Native Alaskan     0.944617
+
+| White                             | 64.013604 |
+| Black                             | 24.472467 |
+| Hispanic                          |  9.181200 |
+| Asian/Pacific Islander            |  1.388112 |
+| Native American/Native Alaskan    |  0.944617 |
 
 Since we are interested in only two classes, we are removing the rest of the classes from the data before we train the model. Also, there is are columns such as police and Hispanic which is not relevant to our prediction classes, and hence we ignored those columns as well from the original data set.
 
@@ -98,11 +98,11 @@ Decision Tree classifiers use decision trees to predict the value of a target va
 
 The important parameters of decision tree classifiers used in our model:
 
-### criterion: Criterion is the function that is used to measure the quality of a split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
+* criterion: Criterion is the function that is used to measure the quality of a split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
 
-### max_depth: The max_depth parameter denotes the maximum depth of the tree.
+* max_depth: The max_depth parameter denotes the maximum depth of the tree.
 	
-### min_samples_leaf: The min_samples_leaf indicates the minimum number of samples required to be at a leaf node. 
+* min_samples_leaf: The min_samples_leaf indicates the minimum number of samples required to be at a leaf node. 
 
 The accuracy we got from implementing the decision model is 87%. Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
@@ -119,7 +119,7 @@ In the below Figure the green circle in question would be categorized as a red t
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![Random Forest | 10*10](images/random_f.png){#fig:Random Forest [@hid-sp18-710-medium_ref8]}
+![Random Forest [@hid-sp18-710-medium_ref8]](images/random_f.png){#fig:Random Forest}
 
 ## Prophet
 
