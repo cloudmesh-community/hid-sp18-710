@@ -73,13 +73,14 @@ In the pre-processing stage, the original dataset is modified to create a new da
 
 In this project, we want to if the victim is white or black. There are five classes, but we are predicting only two. The main reason to ignore other classes is that from the given data set, the rest of the classes is less than 11% of the dataset.
 
-|-----------------------------------|-----------|
-| White                             | 64.013604 |
-| Black                             | 24.472467 |
-| Hispanic                          |  9.181200 |
-| Asian/Pacific Islander            |  1.388112 |
-| Native American/Native Alaskan    |  0.944617 |
-|-----------------------------------|-----------|
+| Race				    | Victims(in Percentage) |
+|-----------------------------------|------------------------|
+| White                             | 64.013604 	     |
+| Black                             | 24.472467              |
+| Hispanic                          |  9.181200              |
+| Asian/Pacific Islander            |  1.388112              |
+| Native American/Native Alaskan    |  0.944617              |
+
 
 Since we are interested in only two classes, we are removing the rest of the classes from the data before we train the model. Also, there is are columns such as police and Hispanic which is not relevant to our prediction classes, and hence we ignored those columns as well from the original data set.
 
