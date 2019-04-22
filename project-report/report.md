@@ -63,6 +63,7 @@ The dataset contains various information about victims of gun violence. Each row
 **Prophet:** Prophet is an open source procedure for forecasting time series data released by Facebook. This procedure based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. This library works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well [@hid-sp18-710-taylor_prophet].
 
 ## Data Preprocessing
+
 In the pre-processing stage, the original dataset is modified to create a new dataset where existing columns are transformed, and handle the outliers. The columns are added, deleted or transformed based on the graphical analysis which has been performed on the data before actually building a model.
 
 In this project, we want to if the victim is white or black. There are five classes, but we are predicting only two. The main reason to ignore other classes is that from the given data set, the rest of the classes is less than 11% of the dataset.
@@ -80,6 +81,7 @@ Since we are interested in only two classes, we are removing the rest of the cla
 
 
 ## Label Encoding
+
 Label encoding is the technique that is used to convert categorical data, or text data, into numbers, so that our predictive models can better understand. Some of the columns in our data set contain text data. To run any machine learning model against the data, we can’t have text in our data. So before we run any kind of model, we need to prepare this data by converting categorical text data into model-understandable numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_encode].
 
 ![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:After Label Encode}
@@ -104,7 +106,7 @@ The important parameters of decision tree classifiers used in our model:
 The accuracy we got from implementing the decision model is 87%. 
 Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
-![Decision Tree |10*10](images/decision_tree.PNG){#fig:Decision Tree} 
+![Decision Tree 10*10](images/decision_tree.PNG){#fig:Decision Tree} 
 
 ## K-Nearest Neighbor
 
@@ -112,7 +114,7 @@ KNN  algorithms used mainly for both classification and regression predictive pr
 
 In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
 
-![KNNClassifier|10*10](images/knn_classifier.PNG){#fig:KNN Classifier}
+![KNNClassifier 10*10](images/knn_classifier.PNG){#fig:KNN Classifier}
 
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
@@ -135,7 +137,7 @@ predicted classification calculated by the machine learning model.
 From the below two graphs which was generated from the output of Prophet - Forecasting
 method, it clearly shows that there is increase in tend for gun violence in next five years.
 
-![Forecast for next five years|10*10](images/forecast_year.png){#fig:Forecast for next five years}
+![Forecast for next five years 10*10](images/forecast_year.png){#fig:Forecast for next five years}
 
 ![Forecast for next five years by year and month](images/forecast_month.png){#fig:Forecast for next five years by year and month}
 
