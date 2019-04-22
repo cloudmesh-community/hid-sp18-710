@@ -50,7 +50,7 @@ The dataset contains various information about victims of gun violence. Each row
 * Age: It is a numeric field and specifies the age of the victim.
 * Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
-![Snapshot Of Actual Dataset](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
+![Snapshot Of Actual Dataset](images/actual_dataset.PNG){#fig:SnapshotOfActualDataset}
 
 ## Technologies Used
 
@@ -68,9 +68,9 @@ In the pre-processing stage, the original dataset is modified to create a new da
 
 In this project, we want to if the victim is white or black. There are five classes, but we are predicting only two. The main reason to ignore other classes is that from the given data set, the rest of the classes is less than 11% of the dataset.
 
-| Race				    | Victims(in Percentage) |
+| Race				                      | Victims (in Percentage)|
 |-----------------------------------|------------------------|
-| White                             | 64.013604 	     |
+| White                             | 64.013604 	           |
 | Black                             | 24.472467              |
 | Hispanic                          |  9.181200              |
 | Asian/Pacific Islander            |  1.388112              |
@@ -84,7 +84,7 @@ Since we are interested in only two classes, we are removing the rest of the cla
 
 Label encoding is the technique that is used to convert categorical data, or text data, into numbers, so that our predictive models can better understand. Some of the columns in our data set contain text data. To run any machine learning model against the data, we can’t have text in our data. So before we run any kind of model, we need to prepare this data by converting categorical text data into model-understandable numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_encode].
 
-![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:After Label Encode}
+![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:AfterLabelEncode}
 
 ## Data Slicing
 
@@ -106,7 +106,7 @@ The important parameters of decision tree classifiers used in our model:
 The accuracy we got from implementing the decision model is 87%. 
 Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
-![Decision Tree 10*10](images/decision_tree.PNG){#fig:Decision Tree} 
+![Decision Tree 10*10](images/decision_tree.PNG){#fig:DecisionTree} 
 
 ## K-Nearest Neighbor
 
@@ -114,12 +114,12 @@ KNN  algorithms used mainly for both classification and regression predictive pr
 
 In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
 
-![KNNClassifier 10*10](images/knn_classifier.PNG){#fig:KNN Classifier}
+![KNNClassifier 10*10](images/knn_classifier.PNG){#fig:KNNClassifier}
 
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
 
-![Random Forest [@hid-sp18-710-medium_ref8]](images/random_f.png){#fig:Random Forest}
+![Random Forest [@hid-sp18-710-medium_ref8]](images/random_f.png){#fig:RandomForest}
 
 ## Prophet
 
@@ -129,7 +129,7 @@ A prophet is more powerful and effective in time series forecasting. Only very f
 
 All three models performed well, But the accuracy of single decision tree model was higher than the other two models.
 
-![Model Results](images/model_perfm.PNG){#fig:Model Results}
+![Model Results](images/model_perfm.PNG){#fig:ModelResults}
 
 Confusion matrix can also be used to display or describe the performance of the model. It contains the information about actual and
 predicted classification calculated by the machine learning model.
@@ -137,9 +137,9 @@ predicted classification calculated by the machine learning model.
 From the below two graphs which was generated from the output of Prophet - Forecasting
 method, it clearly shows that there is increase in tend for gun violence in next five years.
 
-![Forecast for next five years 10*10](images/forecast_year.png){#fig:Forecast for next five years}
+![Forecast for next five years 10*10](images/forecast_year.png){#fig:Forecastfornextfiveyears}
 
-![Forecast for next five years by year and month](images/forecast_month.png){#fig:Forecast for next five years by year and month}
+![Forecast for next five years by year and month](images/forecast_month.png){#fig:Forecastfornextfiveyearsbyyearandmonth}
 
 
 ## Graphical Analysis Results
@@ -155,9 +155,9 @@ From the bar plot below, it is obvious that majority of the data is for black or
 
 ![Location](images/location.png){#fig:Location}
 
-![Incident Count](images/incidentcnt.png){#fig:Incident Count}
+![Incident Count](images/incidentcnt.png){#fig:IncidentCount}
 
-![Sex Of Victims](images/sex.png){#fig:Sex Of Victims}
+![Sex Of Victims](images/sex.png){#fig:SexOfVictims}
 
 From the above graphs we can infer that most of the victims are male and the number of shootings have been slightly increasing year after another. The majority of the gun deaths occur at home, about 10% occur on the streets and there are very few victims with higher education levels.
 
