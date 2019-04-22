@@ -38,28 +38,22 @@ The dataset we used in this project was collected from five thirty-eight's gun d
 The dataset contains various information about victims of gun violence. Each row of the data set includes the year and month of the shooting, the intent of the shooter, whether the police were at the scene or not, the gender, age race and education level of the victim and finally the place where the shooting happened. The dataset also has a specific column that says if the victim is Hispanic or not. The dataset consists of the following attributes:
 
 * Year: It is a numerical field and holds the year of the shooting.
-	
 * Month: It is a numerical field and holds the month of the shooting.
-	
 * Intent: It is a text field and specifies the intentention of the shooter.
-	 
-* Police: It is a numerical field and contains values 0 or 1 which indicates if the police were at the scene or not.
-	
+* Police: It is a numerical field and contains values 0 or 1 which indicates 
+  if the police were at the scene or not.	
 * Sex: It is a text field and contains values M for Male and F for Females.
-	 
 * Place: It is a text field and specifies where the shooting has happened
-	
 * Education: It is a text field and has the education level of the victim.
-	
-* Race: It is a text field, and possible values are White, Black, Hispanic, Asian/Pacific Islander and Native American/Native Alaskan.
-	
+* Race: It is a text field, and possible values are White, Black, Hispanic, 
+  Asian/Pacific Islander and Native American/Native Alaskan.
 * Age: It is a numeric field and specifies the age of the victim.
-	
 * Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
 ![Snapshot Of Actual Dataset](images/actual_dataset.PNG){#fig:Snapshot Of Actual Dataset}
 
 ## Technologies Used
+
 **Pandas:** Pandas is an open source library which provides tools for data mining and analysis using Python. It was primarily used in this project to prepare the data before any specific machine learning algorithms consume the data.
 
 **NumPy:** NumPy is a Python library to perform scientific and mathematical operations on the multidimensional data. NumPy is used in this project to perform some basic mathematical operations.
@@ -101,13 +95,14 @@ Decision Tree classifiers use decision trees to predict the value of a target va
 
 The important parameters of decision tree classifiers used in our model:
 
-* criterion: Criterion is the function that is used to measure the quality of a split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
-
+* criterion: Criterion is the function that is used to measure the quality of a 
+  split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
 * max_depth: The max_depth parameter denotes the maximum depth of the tree.
-	
-* min_samples_leaf: The min_samples_leaf indicates the minimum number of samples required to be at a leaf node. 
+* min_samples_leaf: The min_samples_leaf indicates the minimum number of samples 
+  required to be at a leaf node. 
 
-The accuracy we got from implementing the decision model is 87%. Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
+The accuracy we got from implementing the decision model is 87%. 
+Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
 ![Decision Tree |10*10](images/decision_tree.PNG){#fig:Decision Tree} 
 
@@ -170,13 +165,16 @@ The Figure below shows that for black and white victim, the intent seems to be a
 
 
 ## Limitations
+
 In this project we have implemented simple single binary classification model. This project can be further enhanced and extended to build a multi classification model for the entire CDC multiple causes of death dataset 
 
 ## Conclusion
+
 In this project, a detailed analysis of gun violence was conducted and prediction models were trained using three machine learning algorithms and the trending forecast was also implemented and studied.It would be interesting to study if there are more factors
 like population data, gun laws data that contributes to the violence.
 
 
 ## Acknowledgements
+
 The author would like to thank Dr.Gregor von Laszewski for his continued support and suggestions in writing this report and successfully completing the project.This project would not have been complete without his dedicated support and encouragements
 and our sincere thanks to all our fellow students.
