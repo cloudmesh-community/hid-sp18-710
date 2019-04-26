@@ -1,9 +1,5 @@
 # Gun Violence in America
 
-:o: figures not done correctly
-
-:o: fix markdown erros so that you do not have verbatim where you like to use lists, see markdown documentation
-
 | Uma M Kugan
 | umakugan@iu.edu
 | Indiana University Bloomington
@@ -70,7 +66,7 @@ predict and stop the violence before it occurs.
 
 The dataset we used in this project was collected from five
 thirty-eight's gun deaths in America using the R code from
-https://data.world/azel/gun-deaths-in-america
+<https://data.world/azel/gun-deaths-in-america>
 [@hid-sp18-710-data_world]. The dataset has data from the year
 2013-2017. The preparation of data is the process of transforming raw
 data to draw some valuable insights or make some predictions based on
@@ -142,7 +138,7 @@ five classes, but we are predicting only two. The main reason to
 ignore other classes is that from the given data set, the rest of the
 classes is less than 11% of the dataset.
 
-| Race				                      | Victims (in Percentage)|
+| Race				                | Victims (in Percentage)|
 |-----------------------------------|------------------------|
 | White                             | 64.013604 	           |
 | Black                             | 24.472467              |
@@ -244,7 +240,7 @@ blue square if k = 5.
 
 ![KNNClassifier](images/knn_classifier.png){#fig:KNNClassifier}
 
-##Random Forest
+## Random Forest
 
 Random forest classifier creates many decision trees from a randomly
 selected subset of the training set and then aggregates them to decide
