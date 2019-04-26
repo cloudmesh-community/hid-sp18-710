@@ -84,7 +84,7 @@ Since we are interested in only two classes, we are removing the rest of the cla
 
 Label encoding is the technique that is used to convert categorical data, or text data, into numbers, so that our predictive models can better understand. Some of the columns in our data set contain text data. To run any machine learning model against the data, we can’t have text in our data. So before we run any kind of model, we need to prepare this data by converting categorical text data into model-understandable numerical data, we use the Label Encoder class. The Label Encoder class from the sklearn library, fit and transform the data, and then replace the existing text data with the new encoded data [@hid-sp18-710-medium_encode].
 
-![After Label Encode |10*10](images/afterlabelencode.PNG){#fig:AfterLabelEncode}
+![After Label Encode](images/afterlabelencode.PNG){#fig:AfterLabelEncode}
 
 ## Data Slicing
 
@@ -106,15 +106,15 @@ The important parameters of decision tree classifiers used in our model:
 The accuracy we got from implementing the decision model is 87%. 
 Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
 
-![Decision Tree 10*10](images/decision_tree.PNG){#fig:DecisionTree} 
+![Decision Tree](images/decision_tree.PNG){#fig:DecisionTree} 
 
 ## K-Nearest Neighbor
 
 KNN  algorithms used mainly for both classification and regression predictive problems. The majority of the vote is taken to classify the data into one of the many categories. The labels for the new points are predicted by computing the distance between the new item and every item in the training data-set using Euclidean, Hamming or Manhattan distance. The model picks K entries which are the number of neighbors to consider which are closest to the new point. Then finally it conducts a majority vote among those data points. The most common class among those K entries will be the class of the new data point. There is no explicit training phase before the classification. KNN model keeps all the training data, and that is the reason why KNN falls under lazy learning [@hid-sp18-710-knn_algo].
 
-In the below Figure the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
+In @fig:KNNClassifier the green circle in question would be categorized as a red triangle if k = 3 and it would be classified as a blue square if k = 5.
 
-![KNNClassifier 10*10](images/knn_classifier.PNG){#fig:KNNClassifier}
+![KNNClassifier](images/knn_classifier.PNG){#fig:KNNClassifier}
 
 ##Random Forest
 Random forest classifier creates many decision trees from a randomly selected subset of the training set and then aggregates them to decide the final class of the test object. We need first to choose random samples from a given data set, construct a decision tree for each sample and get a prediction result from each decision tree. Then Perform a vote for each predicted outcome and prediction with the most votes as the final prediction [@hid-sp18-710-breiman2001random].
@@ -134,10 +134,9 @@ All three models performed well, But the accuracy of single decision tree model 
 Confusion matrix can also be used to display or describe the performance of the model. It contains the information about actual and
 predicted classification calculated by the machine learning model.
 
-From the below two graphs which was generated from the output of Prophet - Forecasting
-method, it clearly shows that there is increase in tend for gun violence in next five years.
+The @fig:Forecastfornextfiveyears and @fig:Forecastfornextfiveyearsbyyearandmonth which was generated from the output of Prophet - Forecasting method, clearly shows that there is increase in tend for gun violence in next five years.
 
-![Forecast for next five years 10*10](images/forecast_year.png){#fig:Forecastfornextfiveyears}
+![Forecast for next five years](images/forecast_year.png){#fig:Forecastfornextfiveyears}
 
 ![Forecast for next five years by year and month](images/forecast_month.png){#fig:Forecastfornextfiveyearsbyyearandmonth}
 
@@ -145,7 +144,7 @@ method, it clearly shows that there is increase in tend for gun violence in next
 ## Graphical Analysis Results
 In this section, we would look at the results of graphical analysis which helped decide what features to include for predictions. After analyzing the data, we deleted the column police as  it does not contribute to our classification.
 
-From the bar plot below, it is obvious that majority of the data is for black or white victims.
+From the @fig:Race, it is obvious that majority of the data is for black or white victims.
 
 ![Race](images/race.png){#fig:Race}
 
@@ -159,9 +158,9 @@ From the bar plot below, it is obvious that majority of the data is for black or
 
 ![Sex Of Victims](images/sex.png){#fig:SexOfVictims}
 
-From the above graphs we can infer that most of the victims are male and the number of shootings have been slightly increasing year after another. The majority of the gun deaths occur at home, about 10% occur on the streets and there are very few victims with higher education levels.
+From visualizing the data using different features, we can infer that most of the victims are male and the number of shootings have been slightly increasing year after another. The majority of the gun deaths occur at home, about 10% occur on the streets and there are very few victims with higher education levels.
 
-The Figure below shows that for black and white victim, the intent seems to be a deciding factor, and the other three factors being age, gender and place. The education levels seems to have very less effect on deciding the race of the victim. 
+The @fig:Feature shows that for black and white victim, the intent seems to be a deciding factor, and the other three factors being age, gender and place. The education levels seems to have very less effect on deciding the race of the victim. 
 
 ![Feature](images/feature.png){#fig:Feature}
 
