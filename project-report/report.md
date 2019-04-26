@@ -40,13 +40,11 @@ The dataset contains various information about victims of gun violence. Each row
 * Year: It is a numerical field and holds the year of the shooting.
 * Month: It is a numerical field and holds the month of the shooting.
 * Intent: It is a text field and specifies the intentention of the shooter.
-* Police: It is a numerical field and contains values 0 or 1 which indicates 
-  if the police were at the scene or not.	
+* Police: It is a numerical field and contains values 0 or 1 which indicates if the police were at the scene or not.	
 * Sex: It is a text field and contains values M for Male and F for Females.
 * Place: It is a text field and specifies where the shooting has happened
 * Education: It is a text field and has the education level of the victim.
-* Race: It is a text field, and possible values are White, Black, Hispanic, 
-  Asian/Pacific Islander and Native American/Native Alaskan.
+* Race: It is a text field, and possible values are White, Black, Hispanic, Asian/Pacific Islander and Native American/Native Alaskan.
 * Age: It is a numeric field and specifies the age of the victim.
 * Hispanic: It is a numeric field and specifies if the victim is Hispanic or not. 
 
@@ -97,11 +95,9 @@ Decision Tree classifiers use decision trees to predict the value of a target va
 
 The important parameters of decision tree classifiers used in our model:
 
-* criterion: Criterion is the function that is used to measure the quality of a 
-  split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
+* criterion: Criterion is the function that is used to measure the quality of a split. Sklearn supports Gini criteria for Gini Index and entropy for Information Gain. The default is gini value.
 * max_depth: The max_depth parameter denotes the maximum depth of the tree.
-* min_samples_leaf: The min_samples_leaf indicates the minimum number of samples 
-  required to be at a leaf node. 
+* min_samples_leaf: The min_samples_leaf indicates the minimum number of samples required to be at a leaf node. 
 
 The accuracy we got from implementing the decision model is 87%. 
 Accuracy is the ratio of the correctly predicted data points to all the predicted data points. The value of accuracy determines the effectiveness of our algorithm.
