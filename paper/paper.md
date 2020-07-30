@@ -7,11 +7,8 @@
 | github: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-710/edit/master/paper/paper.md) 
 
 
----  
 
 Keywords: i523, hid323, NoSQL, Bigdata, RDBMS, hid-sp18-710.  
-
----
 
 
 RDBMS have always been the preferred method of storage for many years
